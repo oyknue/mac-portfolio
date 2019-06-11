@@ -64,39 +64,22 @@
                 </li>
             </ul>
         </div>
+        <!-- 우측 sub_nav -->
         <div class="sub_nav">
             <div class="sub_list  pointer"><i class="fas fa-bars"></i></div>
+            <!-- navs -->
             <div class="navs">
-                <div class="nav pointer" id="nav">
-                    <div class="nav_tit">sub1</div>
-                    <div class="nav_cont">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, minus quis! Aspernatur
-                        recusandae dicta cupiditate omnis a ipsum unde expedita culpa ex error! At fugiat alias.
-                    </div>
-                </div>
-                <div class="nav pointer">
-                    <div class="nav_tit">sub2</div>
-                    <div class="nav_cont">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, minus quis! Aspernatur
-                        recusandae dicta cupiditate omnis a ipsum unde expedita.
-                    </div>
-                </div>
-                <div class="nav pointer">
-                    <div class="nav_tit">sub3</div>
-                    <div class="nav_cont">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, minus quis! Aspernatur
-                        recusandae dicta cupiditate omnis a ipsum unde expedita culpa ex error!
-                    </div>
-                </div>
+
             </div>
         </div>
+<!-- macs -->
         <ul class="macs">
             <li class="mac pointer" id="thismac">이 mac에 관하여</li>
             <li class="mac pointer" id="off">시스템종료</li>
             <li class="mac pointer" id="restart">재시동</li>
             <li class="mac pointer" id="mobile">모바일버전 전환</li>
         </ul>
-
+<!-- docs -->
         <div class="docs">
             <ul class="doc">
                 <!-- 풀무원, 카페, 퍼시스, 아키텍트, 패러랙스, 성적관리 -->
@@ -145,12 +128,13 @@
 
         <!--post-it -->
         <div class="postit pointer">
-            <div class="bts">
-                <i class="fas fa-plus add"></i>&nbsp;    
+            <div class="bts">   
                 <i class="fas fa-times bt_remove"></i>&nbsp;
                 <i class="fas fa-share bt_save"></i>
             </div>
-            <form><textarea class="postCont" placeholder="메모를 작성하세요"></textarea></form>
+            <form>
+                <textarea class="postCont" placeholder="메모를 작성하세요"></textarea>
+            </form>
         </div>
 
         <!-- folder -->
@@ -178,7 +162,7 @@
                     <li class="folder_name">
                             folder 4
                     </li>
-                </ul>
+            </ul>
         </div>
         <!-- modal -->
         <div class="fodal">
@@ -190,8 +174,9 @@
         </div>
 
     </div>
-    
+
     <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
     <script src="../js/fbinit.js"></script>
     <script src="../js/main.js"></script>
 </body>

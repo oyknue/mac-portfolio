@@ -115,18 +115,7 @@ $("#mobile").click(function(){
   window.open("../mobile/html/mobile.html", "_blank", "toolbar=no", "top=25,left=50, width=375, height=812")
 });
 
-//subnav click evt
-$(".nav").click(function(){
-  var val = $(this).hasClass('navClass');
-  if (val == false) {
-    $(this).addClass('navClass');
-  }
-  else{
-    $(this).removeClass('navClass');
-  }
-});
-
-//post-it
+//post-it drag & drop
 $(function() {
   $( ".postit" ).draggable({
     "opacity": 0.3
@@ -141,12 +130,11 @@ var ref = null;
 db.ref("memos/memo").on("child_added", onAdd);
 db.ref("memos/memo").on("child_removed", onRev); //firebase rmove(data delete)
 
-
 function onAdd(data) {
   var html = `
-  <div class="nav pointer" id="nav">
-    <div class="nav_tit">${data.key}</div>
-      <div class="nav_cont">${data.val().content}</div>
+    <div class="nav pointer clear" id="${data.key}" onclick="navToggle(this);">
+    <i class="fas fa-window-close" onclick="dataRev(this);"></i>
+      <span class="nav_cont">${data.val().content}</span>
     </div>`;
 	$(".navs").prepend(html);
 }
@@ -166,12 +154,18 @@ function dataRev(obj) {
 	db.ref("memos/memo/"+key).remove();
 }
 
-
-
-
-//삭제
-function dataRev(obj) {
+function navToggle(obj){
+  var val = $(obj).hasClass('navClass');
+  if (val == false) {
+    $(obj).addClass('navClass');
+  }
+  else{
+    $(obj).removeClass('navClass');
+  }
 }
+
+//post it 삭제, 불러오기
 $(".bt_remove").click(function(){
   $(".postit").hide();
 });
+

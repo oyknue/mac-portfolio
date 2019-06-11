@@ -1,29 +1,28 @@
-[debug] [2019-06-11T09:01:08.679Z] ----------------------------------------------------------------------
-[debug] [2019-06-11T09:01:08.680Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
-[debug] [2019-06-11T09:01:08.681Z] CLI Version:   6.11.0
-[debug] [2019-06-11T09:01:08.681Z] Platform:      darwin
-[debug] [2019-06-11T09:01:08.681Z] Node Version:  v10.15.3
-[debug] [2019-06-11T09:01:08.681Z] Time:          Tue Jun 11 2019 18:01:08 GMT+0900 (GMT+09:00)
-[debug] [2019-06-11T09:01:08.681Z] ----------------------------------------------------------------------
+[debug] [2019-06-11T14:00:31.490Z] ----------------------------------------------------------------------
+[debug] [2019-06-11T14:00:31.491Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2019-06-11T14:00:31.492Z] CLI Version:   6.11.0
+[debug] [2019-06-11T14:00:31.492Z] Platform:      darwin
+[debug] [2019-06-11T14:00:31.492Z] Node Version:  v10.15.3
+[debug] [2019-06-11T14:00:31.492Z] Time:          Tue Jun 11 2019 23:00:31 GMT+0900 (GMT+09:00)
+[debug] [2019-06-11T14:00:31.492Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2019-06-11T09:01:08.689Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-06-11T09:01:08.689Z] > authorizing via signed-in user
-[debug] [2019-06-11T09:01:08.689Z] [iam] checking project oyknue-portfolio for permissions ["firebase.projects.get"]
-[debug] [2019-06-11T09:01:08.690Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2019-06-11T09:01:08.690Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- <request body omitted>
-[debug] [2019-06-11T09:01:08.992Z] <<< HTTP RESPONSE 200
-[debug] [2019-06-11T09:01:09.003Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/oyknue-portfolio:testIamPermissions  
+[debug] [2019-06-11T14:00:31.499Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-11T14:00:31.500Z] > authorizing via signed-in user
+[debug] [2019-06-11T14:00:31.500Z] [iam] checking project oyknue-portfolio for permissions ["firebase.projects.get"]
+[debug] [2019-06-11T14:00:31.501Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/oyknue-portfolio:testIamPermissions  
 
-[debug] [2019-06-11T09:01:10.277Z] <<< HTTP RESPONSE 200
-[debug] [2019-06-11T09:01:10.278Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/oyknue-portfolio  
+[debug] [2019-06-11T14:00:32.424Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-11T14:00:32.427Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/oyknue-portfolio  
  
-[debug] [2019-06-11T09:01:11.449Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-11T14:00:33.239Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/Users/oyknue/Desktop/git/mac-portfolio'...
 [info] 
-[debug] [2019-06-11T09:01:11.451Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/827893422985/clients/_:getWebAppConfig  
+[debug] [2019-06-11T14:00:33.241Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/827893422985/clients/_:getWebAppConfig  
  
-[debug] [2019-06-11T09:01:12.324Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-11T14:00:34.000Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port...
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port...
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port...
 [info] i  hosting: Serving hosting files from: public
-[info] ✔  hosting: Local server: http://localhost:5000
+[info] ✔  hosting: Local server: http://localhost:5015
