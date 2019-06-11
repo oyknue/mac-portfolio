@@ -135,6 +135,39 @@ $(function() {
 });
 
 //파이어베이스 메모
+var db = firebase.database();
+var ref = null;
+
+db.ref("memos/memo").on("child_added", onAdd);
+db.ref("memos/memo").on("child_removed", onRev); //firebase rmove(data delete)
+
+
+function onAdd(data) {
+  var html = `
+  <div class="nav pointer" id="nav">
+    <div class="nav_tit">${data.key}</div>
+      <div class="nav_cont">${data.val().content}</div>
+    </div>`;
+	$(".navs").prepend(html);
+}
+function onRev(data) {
+	$("#"+data.key).remove(); //jQuery remove (tag delete)
+}
+
+$(".bt_save").on("click", function(){
+	db.ref("memos/memo").push({
+		content: $(".postCont").val()
+	}).key;
+	$(".postCont").val('');
+});
+
+function dataRev(obj) {
+	var key = $(obj).parent().attr("id");
+	db.ref("memos/memo/"+key).remove();
+}
+
+
+
 
 //삭제
 function dataRev(obj) {
