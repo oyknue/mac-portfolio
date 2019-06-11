@@ -33,7 +33,7 @@ $(".doc li").each(function(){
     window.open("https://oyknue-note.firebaseapp.com/html/note.html", "_blank", "toolbar=no, top=25,left=50, width=500, height=800");
   }); //메모앱
   $("#weather").click(function(){
-    window.open("https://oyknue-weather.firebaseapp.com/html/weather.html", "_blank", "toolbar=no, top=25,left=50,width=500, height=800");
+    window.open("https://oyknue-weather.firebaseapp.com", "_blank", "toolbar=no, top=25,left=50,width=500, height=800");
   }); //날씨
   $("#game").click(function(){
     window.open("https://oyknue-note.firebaseapp.com/html/note.html", "_blank", "toolbar=no, top=25,left=50,width=500, height=800");
