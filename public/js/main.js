@@ -98,6 +98,15 @@ $(".sub_list").click(function(){
   }, 1000,function(){});
 });
 
+//post it 삭제, 불러오기
+$(".bt_remove").click(function(){
+  $(".postit").hide();
+});
+$("#bt_new").click(function(e){
+  e.stopPropagation();
+  $(".postit").show();
+});
+
 $(".logo").click(function(){
   $(".macs").slideToggle('slow');
 });
@@ -166,8 +175,8 @@ function navToggle(obj){
   }
 }
 
-//post it 삭제, 불러오기
-$(".bt_remove").click(function(){
-  $(".postit").hide();
-});
 
+//배경화면 클릭하면 sub_nav, fodal 닫히기 
+$(".back_img").click(function(){
+  $(".sub_nav , .fodal").hide();
+});

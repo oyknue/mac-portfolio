@@ -114,8 +114,10 @@ body{overflow: hidden;}
 .sub_list{
   color: white;
   position: absolute;
-  top:0; right: 0;
-  margin: 0.5rem 1.2rem;
+  top:0.5rem; right: 1.2rem;
+}
+.sub_list i:first-child{
+  margin-right: 0.75rem;
 }
 .nav{
   border: 1.5px solid white;
@@ -125,7 +127,7 @@ body{overflow: hidden;}
   margin-bottom: 2rem;
   padding: 0.5rem;
   color:white;
-  overflow: hidden;
+  overflow-y: auto;
   display: block;
 }
 .nav_tit{
@@ -140,7 +142,6 @@ body{overflow: hidden;}
 .nav_cont{
   margin-top: 0.35rem;
   text-align: justify;
-  overflow-y: auto;
 }
 .navClass{
   height: 10rem;
