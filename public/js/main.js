@@ -38,23 +38,23 @@ $(".doc li").each(function(){
   $("#game").click(function(){
     window.open("https://oyknue-note.firebaseapp.com/html/note.html", "_blank", "toolbar=no, top=25,left=50,width=500, height=800");
   }); //경마게임
-  $("#game").click(function(){
-    window.open("https://oyknue-note.firebaseapp.com/html/note.html", "_blank", "toolbar=no, top=25,left=50,width=500, height=800");
+  $("#siri").click(function(){
+    window.open("", "_blank", "toolbar=no, top=25,left=50,width=500, height=800");
   }); //프로필
   $("#safari").click(function(){
-    window.open("https://oyknue-note.firebaseapp.com/html/note.html", "_blank", "toolbar=no, top=25,left=50,width=500, height=800");
+    window.open("https://oyknue-pulmuone.web.app", "_blank", "toolbar=no, top=25,left=50,width=500, height=800");
   }); //풀무원
   $("#chrome").click(function(){
-    window.open("https://oyknue-note.firebaseapp.com/html/note.html", "_blank", "toolbar=no, top=25,left=50, width=500, height=800");
+    window.open("", "_blank", "toolbar=no, top=25,left=50, width=500, height=800");
   }); // 퍼시스
   $("#score").click(function(){
     window.open("http://oyknue.dothome.co.kr/score/index.html", "_blank", "toolbar=no, top=25,left=50,width=500, height=800");
   }); //성적프로그램
   $("photo").click(function(){
-    window.open("https://oyknue-note.firebaseapp.com/html/note.html", "_blank", "toolbar=no, top=25,left=50,width=500, height=800");
+    window.open("", "_blank", "toolbar=no, top=25,left=50,width=500, height=800");
   }); //목업
   $("#calc").click(function(){
-    window.open("https://oyknue-note.firebaseapp.com/html/note.html", "_blank", "toolbar=no, top=25,left=50,width=500, height=800");
+    window.open("", "_blank", "toolbar=no, top=25,left=50,width=500, height=800");
   }); //계산기
 
 //drag & drop(jquery-ui)
