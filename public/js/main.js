@@ -134,11 +134,9 @@ function onAdd(data) {
   var tit = data.val().content.substring(0, 10);
   var html = `
     <div class="nav pointer clear" id="${data.key}" onclick="navToggle(this);">
-      <div class="nav_tit">
-      <i class="fas fa-window-close" onclick="dataRev(this);"></i>
-      ${tit}
-      </div>
-      <span class="nav_cont">${data.val().content}</span>
+        <i class="fas fa-window-close pointer" onclick="dataRev(this);"></i>
+        <div class="nav_tit">${tit}</div>
+        <div class="nav_cont">${data.val().content}</div>
     </div>`;
 	$(".navs").prepend(html);
 }

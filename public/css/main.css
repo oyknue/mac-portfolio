@@ -1,8 +1,15 @@
+.wraps{
+  width: 100%;
+  position: relative;
+  min-width: 1100px;
+}
+.wrap{
+  width: 1100px; margin: 0 auto;
+}
 
 .body,html{
   overflow: hidden;
 }
-
 .back_img{
   position: relative;
   width: 100%;
@@ -97,6 +104,7 @@
   align-items: center;
 }
 .sub_nav{
+ overflow-y: auto;
  display:none;
  position: absolute;
  top: 0; right: -16%;
@@ -125,14 +133,15 @@
 .nav_tit{
   font-weight: bold; 
   font-size: 1.2rem;
+  display: inline-block;
+  margin-top: 0.1rem;
 }
 .nav i{
   margin: 0.25rem;
 }
 .nav_cont{
-  display: block;
-  text-align: justify;
   margin-top: 0.35rem;
+  text-align: justify;
 }
 .navClass{
   height: 10rem;
@@ -276,8 +285,9 @@
 
 .postCont{
 background-color: transparent;
-min-width: 14rem; min-height: 11rem;
-margin-top: 0.5rem;
+min-width: 13rem; min-height: 11rem;
+margin: 0.5rem 0;
 outline: none; border: none;
 overflow-y: auto;
+text-align: justify;
 }
