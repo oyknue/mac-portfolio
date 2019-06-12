@@ -131,9 +131,13 @@ db.ref("memos/memo").on("child_added", onAdd);
 db.ref("memos/memo").on("child_removed", onRev); //firebase rmove(data delete)
 
 function onAdd(data) {
+  var tit = data.val().content.substring(0, 10);
   var html = `
     <div class="nav pointer clear" id="${data.key}" onclick="navToggle(this);">
-    <i class="fas fa-window-close" onclick="dataRev(this);"></i>
+      <div class="nav_tit">
+      <i class="fas fa-window-close" onclick="dataRev(this);"></i>
+      ${tit}
+      </div>
       <span class="nav_cont">${data.val().content}</span>
     </div>`;
 	$(".navs").prepend(html);
