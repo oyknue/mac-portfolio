@@ -77,8 +77,8 @@ $(".doc li").each(function(){
     window.open("https://oyknue-pulmuone.web.app", "_blank", "toolbar=no, top=25,left=50,width=500, height=800");
   }); //풀무원
   $("#chrome").click(function(){
-    window.open("", "_blank", "toolbar=no, top=25,left=50, width=500, height=800");
-  }); // 퍼시스
+    window.open("https://oyknue-pr.web.app", "_blank", "toolbar=no, top=25,left=50, width=500, height=800");
+  }); // 르쿠르제
   $("#score").click(function(){
     window.open("http://oyknue.dothome.co.kr/score/index.html", "_blank", "toolbar=no, top=25,left=50,width=500, height=800");
   }); //성적프로그램
