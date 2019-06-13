@@ -16,6 +16,38 @@ $(".info").click(function(){
   $(".info").hide();
 });
 
+//timezone
+function getToday() {
+  var week = new Array('(일)', '(월)', '(화)', '(수)', '(목)', '(금)', '(토)');
+  var today = new Date().getDay();
+  var todayLabel = week[today];
+  return todayLabel;
+}
+function getAmPm(hour) {
+	if(hour < 10) return "오전 0" + hour;
+	else if(hour == 10 || hour == 11) return "오전 " + hour;
+	else if(hour == 12) return "오후 " + hour;
+	else if(hour >= 13 && hour < 22) return "오후 0" + (hour - 12);
+	else return "오후 " + (hour - 12);
+}
+function zp(n) {
+	if(n < 10) return "0" + n;
+	else return n;
+}
+
+function localDate(val) {
+  var dt = '';
+	var d = null;
+	if(val == undefined) d = new Date();
+	else if(typeof val == "number") d = new Date(val);
+  else return 0;
+  dt += getToday(d.getDay()) + ' ';
+	dt += getAmPm(d.getHours()) + ':';
+	dt += zp(d.getMinutes());
+  return dt;
+}
+$("#date").html(localDate());
+
 
 //hover evt
 $(".doc li").each(function(){
@@ -85,13 +117,13 @@ $(".fodal-close").click(function(){
 });
 
 // list누르면 sub nav 뿅
-$(".list").click(function(){
+$("#bt_list").click(function(){
   $(".sub_nav").animate({
     right:'0',
     width: 'toggle'
   }, 1000,function(){});
 });
-$(".sub_list").click(function(){
+$("#bt_list2").click(function(){
   $(".sub_nav").animate({
     right:'-10%',
     width: 'toggle'
@@ -103,7 +135,9 @@ $(".bt_remove").click(function(){
   $(".postit").hide();
 });
 $("#bt_new").click(function(e){
-  e.stopPropagation();
+  $(".postit").show();
+});
+$("#bt_new2").click(function(e){
   $(".postit").show();
 });
 
@@ -174,7 +208,6 @@ function navToggle(obj){
     $(obj).removeClass('navClass');
   }
 }
-
 
 //배경화면 클릭하면 sub_nav, fodal 닫히기 
 $(".back_img").click(function(){
