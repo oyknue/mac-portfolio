@@ -169,7 +169,6 @@ $(function() {
 //파이어베이스 메모
 var db = firebase.database();
 var ref = null;
-
 db.ref("memos/memo").on("child_added", onAdd);
 db.ref("memos/memo").on("child_removed", onRev); //firebase rmove(data delete)
 
@@ -213,3 +212,33 @@ function navToggle(obj){
 $(".back_img").click(function(){
   $(".sub_nav , .fodal").hide();
 });
+
+//fodal
+
+$.ajax({
+  type: "get",
+  url: "../json/img.json",
+  dataType: "json",
+  success: function (res) {
+    var html = '';
+    for(var i in res.img){
+      html ='<li><img src="'+res.img[i].src+'" class="img"></li>';
+      $(".pic_s").append(html);
+    }
+    $(".pic_s img").click(function(){
+      $(".pic_b > img").attr("src", $(this).attr("src"));
+    });
+    $(".pic_s img").eq(0).trigger("click");
+    }
+  });
+
+
+
+// $.ajax({
+//   type: "get",
+//   url: "../json/img.json",
+//   dataType: "json",
+//   success: function (response) {
+//     console.log(response);
+//   }
+// });

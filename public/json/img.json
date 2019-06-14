@@ -1,0 +1,60 @@
+{
+    "img": [
+      {
+        "tit": "그림1",
+        "content": "그림 1번입니다.",
+        "src": "../img/mockup/mockup1.jpg"
+      },
+      {
+        "tit": "그림2",
+        "content": "그림 2번입니다.",
+        "src": "../img/mockup/mockup2.jpg"
+      },
+      {
+        "tit": "그림3",
+        "content": "그림 3번입니다.",
+        "src": "../img/mockup/mockup3.jpg"
+      },
+      {
+        "tit": "그림4",
+        "content": "그림 4번입니다.",
+        "src": "../img/mockup/mockup4.jpg"
+      },
+      {
+        "tit": "그림5",
+        "content": "그림 5번입니다.",
+        "src": "../img/mockup/mockup5.jpg"
+      },
+      {
+        "tit": "그림6",
+        "content": "그림 6번입니다.",
+        "src": "../img/mockup/mockup6.jpg"
+      },
+      {
+        "tit": "그림7",
+        "content": "그림 7번입니다.",
+        "src": "../img/mockup/mockup7.jpg"
+      },
+      {
+        "tit": "그림8",
+        "content": "그림 8번입니다.",
+        "src": "../img/mockup/mockup8.jpg"
+      },
+      {
+        "tit": "그림9",
+        "content": "그림 9번입니다.",
+        "src": "../img/mockup/mockup9.jpg"
+      },
+      {
+        "tit": "그림10",
+        "content": "그림 10번입니다.",
+        "src": "../img/mockup/mockup10.jpg"
+      },
+      {
+        "tit": "그림11",
+        "content": "그림 11번입니다.",
+        "src": "../img/mockup/mockup11.jpg"
+      }
+    ],
+    "cnt": 8
+  }
