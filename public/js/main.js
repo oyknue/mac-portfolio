@@ -214,7 +214,7 @@ $(".back_img").click(function(){
 });
 
 //fodal
-
+//////사진대신 리스트 클릭하면 뜨도록 수정하기
 $.ajax({
   type: "get",
   url: "../json/img.json",
@@ -231,8 +231,6 @@ $.ajax({
     $(".pic_s img").eq(0).trigger("click");
     }
   });
-
-
 
 // $.ajax({
 //   type: "get",
