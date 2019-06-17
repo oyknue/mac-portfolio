@@ -11,6 +11,8 @@ function ani(){
   });
 }
 
+
+
 //click info
 $(".info").click(function(){ 
   $(".info").hide();
@@ -214,29 +216,23 @@ $(".back_img").click(function(){
 });
 
 //fodal
-//////사진대신 리스트 클릭하면 뜨도록 수정하기
+//////리스트 클릭하면 해당 사진 뜸
 $.ajax({
   type: "get",
-  url: "../json/img.json",
+  url: "../json/img.json", 
   dataType: "json",
   success: function (res) {
-    var html = '';
-    for(var i in res.img){
-      html ='<li><img src="'+res.img[i].src+'" class="img"></li>';
-      $(".pic_s").append(html);
-    }
-    $(".pic_s img").click(function(){
-      $(".pic_b > img").attr("src", $(this).attr("src"));
-    });
-    $(".pic_s img").eq(0).trigger("click");
-    }
-  });
 
-// $.ajax({
-//   type: "get",
-//   url: "../json/img.json",
-//   dataType: "json",
-//   success: function (response) {
-//     console.log(response);
-//   }
-// });
+    for(var i in res.img){
+      html = '<li data-src="'+res.img[i].src+'">'+res.img[i].tit+'</li>';
+      $(".pic_tit").append(html);
+    }
+
+    $(".pic_tit > li").click(function(){
+      $(".pic_b > img").attr("src", $(this).data('src'));
+    });
+
+    $(".pic_tit").eq(0).trigger("click");
+    }
+
+  });
