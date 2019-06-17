@@ -1,58 +1,58 @@
 {
     "img": [
       {
-        "tit": "그림1",
-        "content": "그림 1번입니다.",
+        "tit": "SignIn Page",
+        "content": "로그인 페이지입니다.",
         "src": "../img/mockup/mockup1.jpg"
       },
       {
-        "tit": "그림2",
-        "content": "그림 2번입니다.",
+        "tit": "SignUp Page",
+        "content": "화원가입 페이지입니다.",
         "src": "../img/mockup/mockup2.jpg"
       },
       {
-        "tit": "그림3",
-        "content": "그림 3번입니다.",
+        "tit": "Accounts",
+        "content": "타계정입니다.",
         "src": "../img/mockup/mockup3.jpg"
       },
       {
-        "tit": "그림4",
-        "content": "그림 4번입니다.",
+        "tit": "My Accounts",
+        "content": "계정입니다.",
         "src": "../img/mockup/mockup4.jpg"
       },
       {
-        "tit": "그림5",
-        "content": "그림 5번입니다.",
+        "tit": "News Feed",
+        "content": "뉴스피드입니다. 자신이 팔로우한 계정들이 뜹니다,",
         "src": "../img/mockup/mockup5.jpg"
       },
       {
-        "tit": "그림6",
-        "content": "그림 6번입니다.",
+        "tit": "Searching Page",
+        "content": "서칭페이지입니다.",
         "src": "../img/mockup/mockup6.jpg"
       },
       {
-        "tit": "그림7",
-        "content": "그림 7번입니다.",
+        "tit": "Searching Sample",
+        "content": "서칭 예시입니다.",
         "src": "../img/mockup/mockup7.jpg"
       },
       {
-        "tit": "그림8",
-        "content": "그림 8번입니다.",
+        "tit": "Posting Page",
+        "content": "포스팅 페이지입니다.",
         "src": "../img/mockup/mockup8.jpg"
       },
       {
-        "tit": "그림9",
-        "content": "그림 9번입니다.",
+        "tit": "Save Sample(Drive)",
+        "content": "저장한 콘텐츠 보기입니다.",
         "src": "../img/mockup/mockup9.jpg"
       },
       {
-        "tit": "그림10",
-        "content": "그림 10번입니다.",
+        "tit": "Save Sample(Walk)",
+        "content": "저장한 콘텐츠 보기입니다.",
         "src": "../img/mockup/mockup10.jpg"
       },
       {
-        "tit": "그림11",
-        "content": "그림 11번입니다.",
+        "tit": "Save Sample(Cycle)",
+        "content": "저장한 콘텐츠 보기입니다.",
         "src": "../img/mockup/mockup11.jpg"
       }
     ],

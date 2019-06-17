@@ -271,6 +271,7 @@ body,html{
   width: 70%; height: 83%;
   position: absolute;
   top: 15%; right: 0;
+  padding: 1.5rem;
   display: flex;
 }
 .fodal-close{
@@ -283,19 +284,17 @@ body,html{
 }
 .fodal-close:hover{border: 3px solid rgb(173, 1, 1);}
 .pic_b{
-  width: 45%; 
-  border: 2px solid #aaa;
+  width: 50%; 
   margin: 0 auto;
 }
-.pic_b > img {width: 100%;}
+.pic_b > img {width: 100%; border: 4px solid #aaa;border-radius: 3px;}
 .pic_tit{
-  width: 42%; padding: 0.25rem;
-  border: 2px solid #aaa;
-  display: flex; flex-wrap: wrap;
-  flex-direction: column;
+  width: 42%; 
+  float: left;
 }
 .pic_tit > li {
-  flex: 1 1; 
+  flex: 1 1; padding: 0.5rem;
+  border-bottom: 2px solid #ccc;
   font-size: 1rem;
   cursor: pointer;
 }

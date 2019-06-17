@@ -12,7 +12,6 @@ function ani(){
 }
 
 
-
 //click info
 $(".info").click(function(){ 
   $(".info").hide();
@@ -109,14 +108,33 @@ $(".folder").each(function(){
 //folder modal: dnl click evt로 모달창 띄우기
 $(".folder").dblclick(function(){
     if($(".fodal").css("display") == "none"){
-      //alert("???"); 
-      //alert, console 전부 정상적으로 가동 됨. 
       $(".fodal").css({"display":"block"});
     }
 });
 $(".fodal-close").click(function(){
   $(".fodal").hide();
 });
+
+//fodal 리스트 클릭하면 해당 사진 뜸
+$.ajax({
+  type: "get",
+  url: "../json/img.json", 
+  dataType: "json",
+  success: function (res) {
+
+    for(var i in res.img){
+      html = '<li data-src="'+res.img[i].src+'">'+res.img[i].tit+'</li>';
+      $(".pic_tit").append(html);
+    }
+
+    $(".pic_tit > li").click(function(){
+      $(".pic_b > img").attr("src", $(this).data('src'));
+    });
+
+    $(".pic_tit >li").eq(1).trigger("click");
+    }
+
+  });
 
 // list누르면 sub nav 뿅
 $("#bt_list").click(function(){
@@ -215,24 +233,4 @@ $(".back_img").click(function(){
   $(".sub_nav , .fodal").hide();
 });
 
-//fodal
-//////리스트 클릭하면 해당 사진 뜸
-$.ajax({
-  type: "get",
-  url: "../json/img.json", 
-  dataType: "json",
-  success: function (res) {
 
-    for(var i in res.img){
-      html = '<li data-src="'+res.img[i].src+'">'+res.img[i].tit+'</li>';
-      $(".pic_tit").append(html);
-    }
-
-    $(".pic_tit > li").click(function(){
-      $(".pic_b > img").attr("src", $(this).data('src'));
-    });
-
-    $(".pic_tit").eq(0).trigger("click");
-    }
-
-  });
