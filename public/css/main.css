@@ -139,6 +139,7 @@ body,html{
 .sub_list i:first-child{
   margin-right: 0.75rem;
 }
+
 .nav{
   border: 1.5px solid white;
   border-radius: 6px;
