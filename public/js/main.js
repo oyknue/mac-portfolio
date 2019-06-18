@@ -69,10 +69,10 @@ $(".doc li").each(function(){
     window.open("https://oyknue-weather.firebaseapp.com", "_blank", "toolbar=no, top=25,left=50,width=500, height=800");
   }); //날씨
   $("#game").click(function(){
-    window.open("https://oyknue-note.firebaseapp.com/html/note.html", "_blank", "toolbar=no, top=25,left=50,width=500, height=800");
+    window.open("https://racing-oyknue.web.app", "_blank", "toolbar=yes, top=25,left=50,width=1200, height=800");
   }); //경마게임
   $("#siri").click(function(){
-    window.open("", "_blank", "toolbar=no, top=25,left=50,width=500, height=800");
+    window.open("https://racing-oyknue.web.app", "_blank", "toolbar=no, top=25,left=50,width=500, height=800");
   }); //프로필
   $("#safari").click(function(){
     window.open("https://oyknue-pulmuone.web.app", "_blank", "toolbar=no, top=25,left=50,width=500, height=800");
