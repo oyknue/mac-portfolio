@@ -282,9 +282,8 @@ body,html{
   cursor: pointer;
   position:absolute; z-index: 88888899;
   top: 0.45rem; left: 0.7rem; 
-  color: rgba(255, 255, 255, 0.692);
 }
-.fodal-close:hover{border: 3px solid rgb(173, 1, 1);}
+.fodal-close:hover{box-shadow: 1px 0.5px 7px red;}
 .pic_b{
   width: 50%; 
   margin: 0 auto;
@@ -328,6 +327,22 @@ margin: 0.5rem 0;
 outline: none; border: none;
 overflow-y: auto;
 text-align: justify;
+}
+
+/* thismac */
+.thismac_modal{
+  display:none;
+  position: absolute;
+  top:25%; left: 50%;
+  transform: translate(-50%);
+  z-index: 8988989;
+  width: 748px; height: 450px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-image: url(../img/thismac3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
 }
 
 /***** 반응형 *****/

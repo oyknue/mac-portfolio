@@ -11,7 +11,6 @@ function ani(){
   });
 }
 
-
 //click info
 $(".info").click(function(){ 
   $(".info").hide();
@@ -91,12 +90,8 @@ $(".doc li").each(function(){
   }); //계산기
 
 //drag & drop(jquery-ui)
-$(function() {
-  $( ".folder, .fodal" ).draggable({
-    "opacity": 0.3
-  });
-  $( ".folder, .fodal" ).droppable();
-});
+$(".folder, .fodal").draggable({"opacity": 0.3});
+$(".folder, .fodal").droppable();
 
 //folder name
 $(".folder").each(function(){
@@ -116,7 +111,7 @@ $(".fodal-close").click(function(){
   $(".fodal").hide();
 });
 
-//fodal 리스트 클릭하면 해당 사진 뜸
+//fodal 리스트 클릭하면 해당 사진 뜨도록 처리
 $.ajax({
   type: "get",
   url: "../json/img.json", 
@@ -169,7 +164,7 @@ $(".logo").click(function(){
 //재시동 버튼 오류해결하기.왜 splending으로 안가지? location.href도 안됨.
 $("#off").click(function(){
   alert("정말로 종료하시겠습니까?");
-  window.close(); //왜 window에서는 내 맘대로 되는데 맥은 안됨?.?
+  window.close(); //window에서 문제 없으나 mac에서 좀 이상한듯 함. 확인요망.
 });
 $("#restart").click(function(){
   document.location.href = '../html/splending.html';
@@ -187,11 +182,11 @@ $(function() {
   $( ".postit" ).droppable();
 });
 
-//파이어베이스 메모
+//파이어베이스 메모기능 구현
 var db = firebase.database();
 var ref = null;
 db.ref("memos/memo").on("child_added", onAdd);
-db.ref("memos/memo").on("child_removed", onRev); //firebase rmove(data delete)
+db.ref("memos/memo").on("child_removed", onRev); //firebase remove(data delete)
 
 function onAdd(data) {
   var tit = data.val().content.substring(0, 10);
@@ -229,9 +224,16 @@ function navToggle(obj){
   }
 }
 
-//배경화면 클릭하면 sub_nav, fodal 닫히기 
+//배경화면 클릭하면 sub_nav, fodal, thismac, macs 닫히기 
 $(".back_img").click(function(){
-  $(".sub_nav , .fodal").hide();
+  $(".sub_nav , .fodal, .thismac_modal, .macs").hide();
 });
 
 
+//이 mac에 관하여
+$("#thismac").click(function(){
+  $(".thismac_modal").css({"display":"block"});
+});
+$(".thismac_modal").click(function(){
+  $(this).css({"display":"none"});
+});
