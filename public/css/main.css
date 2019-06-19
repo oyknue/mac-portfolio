@@ -148,8 +148,8 @@ body,html{
   margin-bottom: 2rem;
   padding: 0.5rem;
   color:white;
-  overflow-y: auto;
   display: block;
+  overflow: hidden;
 }
 .nav_tit{
   font-weight: bold; 
@@ -166,6 +166,7 @@ body,html{
 }
 .navClass{
   height: 10rem;
+  overflow-y: auto;
 }
 
 /* apple logo */
@@ -346,4 +347,5 @@ text-align: justify;
 @media screen and (max-width: 768px) {
   .info, .res, .wifi, .battery, .search{display: none;}
 }
+
 
