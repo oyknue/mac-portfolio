@@ -82,8 +82,8 @@ $(".doc li").each(function(){
   $("#score").click(function(){
     window.open("http://oyknue.dothome.co.kr/score/index.html", "_blank", "toolbar=no, top=25,left=50,width=500, height=800");
   }); //성적프로그램
-  $("photo").click(function(){
-    window.open("", "_blank", "toolbar=no, top=25,left=50,width=500, height=800");
+  $("#firefox").click(function(){
+    window.open("https://oyknue-fursys.web.app", "_blank", "toolbar=no, top=25,left=50,width=1800, height=1000");
   }); //목업
   $("#calc").click(function(){
     window.open("", "_blank", "toolbar=no, top=25,left=50,width=500, height=800");
