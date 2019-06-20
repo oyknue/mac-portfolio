@@ -173,7 +173,7 @@ body,html{
 .macs{
   display: none;
   position: absolute;
-  top:3.5%; left:0;
+  top:35px; left:0;
   z-index: 999999;
   background-color:  rgba(0, 0, 0, 0.65);
   color: white;
