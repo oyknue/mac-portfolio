@@ -70,9 +70,9 @@ $(".doc li").each(function(){
   $("#game").click(function(){
     window.open("https://racing-oyknue.web.app", "_blank", "toolbar=yes, top=25,left=50,width=1800, height=1000");
   }); //경마게임
-  $("#siri").click(function(){
-    window.open("https://racing-oyknue.web.app", "_blank", "toolbar=no, top=25,left=50,width=500, height=800");
-  }); //프로필
+  $("#iooks").click(function(){
+    window.open("http://book.cafe24app.com", "_blank", "toolbar=no, top=25,left=50,width=1800, height=1000");
+  }); //node books
   $("#safari").click(function(){
     window.open("https://oyknue-pulmuone.web.app", "_blank", "toolbar=no, top=25,left=50,width=1800, height=1000");
   }); //풀무원
