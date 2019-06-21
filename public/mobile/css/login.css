@@ -1,0 +1,75 @@
+.body,html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.back_img{
+    border: 0;
+    padding: 0; 
+    background-image: url('../img/back.jpg');
+    filter: blur(3px);
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.wrap{
+    position: absolute;
+    top: 0; left: 0;
+    min-height: 100%; min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.user{
+    
+    width: 7.5rem; height: 7.5rem; 
+    overflow: hidden; 
+    border-radius: 50%; 
+    border: 1px solid #bbb;
+}
+
+.user_name{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #f1f1f1;   
+}
+.pws{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: rgb(224, 224, 224);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.pws *{
+    margin-left: 0.5rem;
+}
+.pw{
+    background: #666;
+    border-radius: 6px;
+    padding: 0.3rem 0.5rem;
+    width: 13rem;
+    text-align: center;
+}
+.icons{
+    margin-top: 15rem;
+    font-size: 1.85rem;
+    width: 20rem;
+    color: #f1f1f1;
+    display: flex;
+    justify-content: space-evenly;
+}
+.icon_ft{
+    margin-top: 0.5rem;
+    margin-left: 1.9rem;
+    font-size: 1rem;
+    width: 20rem;
+    color: #f1f1f1;
+    display: flex;
+    justify-content: space-evenly;
+}
+.icon_ft:last-child{
+    margin-right: 0.5rem;
+}
