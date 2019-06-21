@@ -187,7 +187,7 @@ var db = firebase.database();
 var ref = null;
 db.ref("memos/memo").on("child_added", onAdd);
 db.ref("memos/memo").on("child_removed", onRev); //firebase remove(data delete)
-
+  
 function onAdd(data) {
   var tit = data.val().content.substring(0, 10);
   var html = `
