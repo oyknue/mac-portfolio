@@ -70,7 +70,7 @@ $(".doc li").each(function(){
   $("#game").click(function(){
     window.open("https://racing-oyknue.web.app", "_blank", "toolbar=yes, top=25,left=50,width=1800, height=1000");
   }); //경마게임
-  $("#iooks").click(function(){
+  $("#ibooks").click(function(){
     window.open("http://book.cafe24app.com", "_blank", "toolbar=no, top=25,left=50,width=1800, height=1000");
   }); //node books
   $("#safari").click(function(){
