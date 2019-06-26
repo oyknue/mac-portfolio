@@ -1,5 +1,14 @@
+.wraps{
+  overflow: hidden;
+  width: 100%; height: 100vh;
+}
 .wrap{
+  width: 100%; height: 100%;
   position: relative;
+  background-image: url(../img/back.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .conts{
   position: absolute;
@@ -10,7 +19,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10rem;
+  justify-content: center;
+  margin-top: 160px;
 }
 .user_pic{
   width: 9rem; height: 9rem;
@@ -26,7 +36,7 @@
 .pws{
   text-align: center;
   padding: 0.5rem;
-  margin-top: 3rem;
+  margin-top: 48px;
   border-radius: 6px;
   color: white;
   background-color: rgba(255, 255, 255, 0.288);
@@ -37,7 +47,8 @@
 .pws::placeholder{color: white;}
 .icons{
   position: absolute;
-  bottom: 25%; left: 50%; 
+  margin-top: 350px;
+  left: 50%; 
   transform: translate(-50%);
   color: white;
   display: flex;

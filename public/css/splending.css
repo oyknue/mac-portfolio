@@ -1,19 +1,22 @@
+.wraps{
+  overflow: hidden;
+  width: 100%; height: 100vh;
+}
 .wrap{
   width: 100%;
   height: 100%;
   background-color: black;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.wrap img{
-  width: 10%;
-  position: absolute;
-  top: 25%; left: 50%;
-  transform: translate(-50%);
+.logo{
+  width: 150px;
+  margin-bottom: 150px;
 }
 .loading_graph{
-  position: absolute;
-  bottom: 35%; left: 50%;
-  transform: translate(-50%);
   width: 45rem; height: 0.65rem;
   background-color: #777;
   border-radius: 2px;

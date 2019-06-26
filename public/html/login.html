@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,26 +13,31 @@
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 </head>
+
 <body>
-    <div class="wrap">
-        <img src="../img/back.png" class="img">
-    <div class="conts">
-        <div class="user">
-            <div class="user_pic">
-                <img src="../img/user.jpg" class="img">
+    <div class="wraps">
+        <div class="wrap">
+
+            <div class="conts">
+                <div class="user">
+                    <div class="user_pic">
+                        <img src="../img/user.jpg" class="img">
+                    </div>
+                    <div class="user_name">Eunkyo Lee</div>
+                </div>
+
+                <input type="text" placeholder="Say Hello World!" class="pws">
+
+                <div class="icons pointer">
+                    <i class="far fa-times-circle"></i>
+                    <span>Cancel</span>
+                </div>
             </div>
-            <div class="user_name">Eunkyo Lee</div>
-        </div>
-            <input type="text" placeholder="Say Hello World!" class="pws">
-        <div class="icons pointer">
-            <i class="far fa-times-circle"></i>
-            <span>Cancel</span>
         </div>
     </div>
-    </div>
-    
     <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
     <script src="../js/fbinit.js"></script>
     <script src="../js/login.js"></script>
 </body>
+
 </html>
