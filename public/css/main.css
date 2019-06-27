@@ -68,6 +68,7 @@ body,html{
   top:0.3%; left:0.2%;
 }
 .click3{
+  border-bottom: 3px dashed white;
   width: 10rem; height: 7rem;
   position: absolute;
   top: 8%; left: 29%;

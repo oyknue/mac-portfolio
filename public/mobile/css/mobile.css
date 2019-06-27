@@ -1,8 +1,10 @@
 .html, body{
-  width: 375px; height: 812px;
   overflow: hidden;
 }
 .wraps{
+  width: 375px; height: 812px;
+}
+.back{
   width: 100%; height: 100%;
   background-image: url(../img/back.jpg);
   background-repeat: no-repeat;
