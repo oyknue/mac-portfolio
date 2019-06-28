@@ -85,8 +85,8 @@ $(".doc li").each(function(){
   $("#firefox").click(function(){
     window.open("https://oyknue-fursys.web.app", "_blank", "toolbar=no, top=25,left=50,width=1800, height=1000");
   }); //목업
-  $("#calc").click(function(){
-    window.open("", "_blank", "toolbar=no, top=25,left=50,width=500, height=800");
+  $("#util").click(function(){
+    window.open("https://applestore-oykue.web.app", "_blank");
   }); //계산기
 
 //drag & drop(jquery-ui)
