@@ -69,10 +69,14 @@ body,html{
 }
 .click3{
   border-bottom: 3px dashed white;
-  width: 10rem; height: 7rem;
+  width: 25rem; height: 7rem;
   position: absolute;
-  top: 8%; left: 29%;
+  top: 8%; left: 10%;
   font-size: 1.2rem; padding: 1rem 0.5rem 0 0.5rem;
+}
+.click3 > span{
+  right: 1rem; text-align: right;
+  line-height: 1.8rem;
 }
 .click4{
   width: 18rem; height: 18rem;
