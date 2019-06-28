@@ -169,10 +169,11 @@ $("#off").click(function(){
 $("#restart").click(function(){
   document.location.href = '../html/splending.html';
 });
-$("#mobile").click(function(){
-  //document.location.href = '../mobile/html/mobile.html';
-  window.open("../mobile/html/mobile.html", "_blank", "toolbar=no", "top=25,left=50, width=375, height=812")
-});
+
+// 모바일버전 전환
+function popup(link01){ 
+  window.open(link01,"_blank","width=375px, height=834px, resizable=no;"); 
+} 
 
 //post-it drag & drop
 $(function() {
