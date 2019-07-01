@@ -357,8 +357,9 @@ text-align: justify;
   .info, .res{display: none;}
   .html,body{overflow-x: auto; overflow-y: auto;}
   .folders{width: 25%;}
-  .postit{left:5%;}
-
+  .postit{left:5%; width: 12rem; height: 12rem; padding: 0.5rem;}
+  .postCont{min-width: 3rem; min-height: 8rem; }
+ 
 }
 @media screen and (max-width: 1024px) {
   .info, .res, .wifi, .battery, .search{display: none;}
