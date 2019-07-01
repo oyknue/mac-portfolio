@@ -141,10 +141,12 @@ $("#bt_list").click(function(){
 });
 $("#bt_list2").click(function(){
   $(".sub_nav").animate({
-    right:'-10%',
+    right:'-250px',
     width: 'toggle'
   }, 1000,function(){});
 });
+
+
 
 //post it 삭제, 불러오기
 $(".bt_remove").click(function(){

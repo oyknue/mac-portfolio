@@ -126,12 +126,13 @@ body,html{
   align-items: center;
 }
 .sub_nav{
+  display: block !important;
  overflow-y: auto;
- display:none;
  position: absolute;
- top: 0; right: -16%;
+ top: 0; right: -250px;
  z-index:999999999;
- width: 16%; height: 100%;
+ width: 250px; height: 100%;
+ min-width: 250px;
  background-color: rgba(0, 0, 0, 0.65);
  padding: 2rem;
 }
@@ -347,7 +348,6 @@ text-align: justify;
   background-size: contain;
   cursor: pointer;
 }
-
 /***** 반응형 *****/
 @media screen and (max-width: 2560px) {
  
@@ -357,6 +357,7 @@ text-align: justify;
   .html,body{overflow-x: auto; overflow-y: auto;}
   .folders{width: 25%;}
   .postit{left:5%;}
+
 }
 @media screen and (max-width: 1024px) {
   .info, .res, .wifi, .battery, .search{display: none;}
